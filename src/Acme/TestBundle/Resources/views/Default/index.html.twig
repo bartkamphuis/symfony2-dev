@@ -1,4 +1,13 @@
+{% extends "::base.html.twig" %}
 
+{% block content %}
+	hello {{name}}
+	<ul>
+	<li><a href="{{ path('_daniel') }}">Daniel's js UI</a></li>
+	<li><a href="{{ path('_whitelabel') }}">Whitelabel js UI</a></li>
+	</ul>
 
+	
+    {% block fos_user_content %}{% endblock %}
+{% endblock content %}
 
-Hello {{ name }}!
